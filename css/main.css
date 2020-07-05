@@ -2862,3 +2862,10 @@ ul.breadcrumb li + li:last-child {
   background: var(--body-bg-color);
   border-radius: 4px;
 }
+body {
+  width: 100%;
+  background: url("/images/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
