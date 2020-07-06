@@ -2725,3 +2725,9 @@ ul.breadcrumb li + li:last-child {
   bottom: unset;
   top: calc(100vh - 900px - 200px);
 }
+@media (max-width: 767px) {
+  .back-to-top.back-to-top-on {
+    bottom: unset;
+    top: -900px;
+  }
+}
