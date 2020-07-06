@@ -17,42 +17,10 @@
   --btn-default-hover-bg: #222;
   --btn-default-hover-color: #fff;
   --btn-default-hover-border-color: #222;
-  --highlight-background: #f0f0f0;
-  --highlight-foreground: #444;
-  --highlight-gutter-background: #dedede;
-  --highlight-gutter-foreground: #555;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --body-bg-color: #282828;
-    --content-bg-color: #333;
-    --card-bg-color: #555;
-    --text-color: #ccc;
-    --blockquote-color: #bbb;
-    --link-color: #ccc;
-    --link-hover-color: #eee;
-    --brand-color: #ddd;
-    --brand-hover-color: #ddd;
-    --table-row-odd-bg-color: #282828;
-    --table-row-hover-bg-color: #363636;
-    --menu-item-bg-color: #555;
-    --btn-default-bg: #222;
-    --btn-default-color: #ccc;
-    --btn-default-border-color: #555;
-    --btn-default-hover-bg: #666;
-    --btn-default-hover-color: #ccc;
-    --btn-default-hover-border-color: #666;
-    --highlight-background: #1d1f21;
-    --highlight-foreground: #c5c8c6;
-    --highlight-gutter-background: #2d2f31;
-    --highlight-gutter-foreground: #b4b7b5;
-  }
-  img {
-    opacity: 0.75;
-  }
-  img:hover {
-    opacity: 0.9;
-  }
+  --highlight-background: #2b2b2b;
+  --highlight-foreground: #f8f8f2;
+  --highlight-gutter-background: #3f3f3e;
+  --highlight-gutter-foreground: #e3e3de;
 }
 html {
   line-height: 1.15; /* 1 */
@@ -403,119 +371,17 @@ body:not(.sidebar-active) .sidebar-toggle:hover .toggle-line-last {
   transform: rotate(45deg);
   top: -5px;
 }
-/*
+/* a11y-dark theme */
+/* Based on the Tomorrow Night Eighties theme: https://github.com/isagalaev/highlight.js/blob/master/src/styles/tomorrow-night-eighties.css */
+/* @author: ericwbailey */
 
-Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
-
-*/
-
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: #F0F0F0;
-}
-
-
-/* Base color: saturation 0; */
-
-.hljs,
-.hljs-subst {
-  color: #444;
-}
-
-.hljs-comment {
-  color: #888888;
-}
-
-.hljs-keyword,
-.hljs-attribute,
-.hljs-selector-tag,
-.hljs-meta-keyword,
-.hljs-doctag,
-.hljs-name {
-  font-weight: bold;
-}
-
-
-/* User color: hue: 0 */
-
-.hljs-type,
-.hljs-string,
-.hljs-number,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-quote,
-.hljs-template-tag,
-.hljs-deletion {
-  color: #880000;
-}
-
-.hljs-title,
-.hljs-section {
-  color: #880000;
-  font-weight: bold;
-}
-
-.hljs-regexp,
-.hljs-symbol,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-link,
-.hljs-selector-attr,
-.hljs-selector-pseudo {
-  color: #BC6060;
-}
-
-
-/* Language color: hue: 90; */
-
-.hljs-literal {
-  color: #78A960;
-}
-
-.hljs-built_in,
-.hljs-bullet,
-.hljs-code,
-.hljs-addition {
-  color: #397300;
-}
-
-
-/* Meta color: hue: 200 */
-
-.hljs-meta {
-  color: #1f7199;
-}
-
-.hljs-meta-string {
-  color: #4d99bf;
-}
-
-
-/* Misc effects */
-
-.hljs-emphasis {
-  font-style: italic;
-}
-
-.hljs-strong {
-  font-weight: bold;
-}
-
-@media (prefers-color-scheme: dark) {
-/* Tomorrow Night Theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-
-/* Tomorrow Comment */
+/* Comment */
 .hljs-comment,
 .hljs-quote {
-  color: #969896;
+  color: #d4d0ab;
 }
 
-/* Tomorrow Red */
+/* Red */
 .hljs-variable,
 .hljs-template-variable,
 .hljs-tag,
@@ -524,10 +390,10 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 .hljs-selector-class,
 .hljs-regexp,
 .hljs-deletion {
-  color: #cc6666;
+  color: #ffa07a;
 }
 
-/* Tomorrow Orange */
+/* Orange */
 .hljs-number,
 .hljs-built_in,
 .hljs-builtin-name,
@@ -536,39 +402,39 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 .hljs-params,
 .hljs-meta,
 .hljs-link {
-  color: #de935f;
+  color: #f5ab35;
 }
 
-/* Tomorrow Yellow */
+/* Yellow */
 .hljs-attribute {
-  color: #f0c674;
+  color: #ffd700;
 }
 
-/* Tomorrow Green */
+/* Green */
 .hljs-string,
 .hljs-symbol,
 .hljs-bullet,
 .hljs-addition {
-  color: #b5bd68;
+  color: #abe338;
 }
 
-/* Tomorrow Blue */
+/* Blue */
 .hljs-title,
 .hljs-section {
-  color: #81a2be;
+  color: #00e0e0;
 }
 
-/* Tomorrow Purple */
+/* Purple */
 .hljs-keyword,
 .hljs-selector-tag {
-  color: #b294bb;
+  color: #dcc6e0;
 }
 
 .hljs {
   display: block;
   overflow-x: auto;
-  background: #1d1f21;
-  color: #c5c8c6;
+  background: #2b2b2b;
+  color: #f8f8f2;
   padding: 0.5em;
 }
 
@@ -580,7 +446,31 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   font-weight: bold;
 }
 
+@media screen and (-ms-high-contrast: active) {
+  .hljs-addition,
+  .hljs-attribute,
+  .hljs-built_in,
+  .hljs-builtin-name,
+  .hljs-bullet,
+  .hljs-comment,
+  .hljs-link,
+  .hljs-literal,
+  .hljs-meta,
+  .hljs-number,
+  .hljs-params,
+  .hljs-string,
+  .hljs-symbol,
+  .hljs-type,
+  .hljs-quote {
+        color: highlight;
+    }
+
+    .hljs-keyword,
+    .hljs-selector-tag {
+        font-weight: bold;
+    }
 }
+
 .highlight:hover .copy-btn,
 .highlight .copy-btn:focus {
   opacity: 1;
@@ -2565,52 +2455,6 @@ ul.breadcrumb li + li:last-child {
   border-bottom-color: #111;
   color: #111;
 }
-@media (prefers-color-scheme: dark) {
-  .tag-cloud-0 {
-    border-bottom-color: #555;
-    color: #555;
-  }
-  .tag-cloud-1 {
-    border-bottom-color: #646464;
-    color: #646464;
-  }
-  .tag-cloud-2 {
-    border-bottom-color: #737373;
-    color: #737373;
-  }
-  .tag-cloud-3 {
-    border-bottom-color: #828282;
-    color: #828282;
-  }
-  .tag-cloud-4 {
-    border-bottom-color: #929292;
-    color: #929292;
-  }
-  .tag-cloud-5 {
-    border-bottom-color: #a1a1a1;
-    color: #a1a1a1;
-  }
-  .tag-cloud-6 {
-    border-bottom-color: #b0b0b0;
-    color: #b0b0b0;
-  }
-  .tag-cloud-7 {
-    border-bottom-color: #c0c0c0;
-    color: #c0c0c0;
-  }
-  .tag-cloud-8 {
-    border-bottom-color: #cfcfcf;
-    color: #cfcfcf;
-  }
-  .tag-cloud-9 {
-    border-bottom-color: #dedede;
-    color: #dedede;
-  }
-  .tag-cloud-10 {
-    border-bottom-color: #eee;
-    color: #eee;
-  }
-}
 .use-motion .animated {
   visibility: visible;
 }
@@ -2862,10 +2706,22 @@ ul.breadcrumb li + li:last-child {
   background: var(--body-bg-color);
   border-radius: 4px;
 }
-body {
-  width: 100%;
-  background: url("/images/bg.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+.main-inner {
+  opacity: 0.8;
+}
+.back-to-top {
+  right: 60px;
+  width: 70px;
+  height: 900px;
+  top: -900px;
+  bottom: unset;
+  transition: all 0.5s ease-in-out;
+  background: url("/images/scroll.png");
+}
+.back-to-top > i {
+  display: none;
+}
+.back-to-top.back-to-top-on {
+  bottom: unset;
+  top: calc(100vh - 900px - 200px);
 }
