@@ -460,5 +460,13 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
 			document.body.addEventListener('input', POWERMODE);
 		</script>
 	
+
+	
+	<script type="text/javascript">
+		var windowWidth = document.body.clientWidth
+		if (windowWidth > 480) {
+			document.write('<script type="text/javascript" src="/js/snow.js"><\/script>');
+		}
+	</script>
 </body>
 </html>
